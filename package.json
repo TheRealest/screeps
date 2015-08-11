@@ -1,0 +1,23 @@
+{
+  "name": "screeps",
+  "version": "0.0.0",
+  "description": "Screeps scripts by TheRealest",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/TheRealest/screeps.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheRealest/screeps/issues"
+  },
+  "homepage": "https://github.com/TheRealest/screeps",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-screeps": "^1.1.0"
+  }
+}
