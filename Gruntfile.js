@@ -11,8 +11,21 @@ module.exports = function(grunt) {
       dist: {
         src: ['dist/*.js']
       }
+    },
+    coffee: {
+      compile: {
+        expand: true,
+        flatten: true,
+        cwd: 'src',
+        src: ['*.coffee'],
+        dest: 'dist/',
+        ext: '.js'
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-screeps');
+  grunt.loadNpmTasks('grunt-contrib-coffee');
+
+  grunt.registerTask('deploy',['coffee','screeps']);
 };
